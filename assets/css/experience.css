@@ -1,0 +1,40 @@
+.experience {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 0.7rem;
+}
+
+.experience .title {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.experience li .period {
+  font-size: .9em;
+  display: flex;
+  flex-direction: row;
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.experience li .period::before {
+  content: "";
+  display: inline-block;
+  background-image: url("/assets/img/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5rem;
+}
+
+.experience li p {
+  text-align: justify;
+  margin-top: 0;
+  font-size: .8em;
+}
