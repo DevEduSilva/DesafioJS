@@ -42,6 +42,11 @@
   font-size: 1.25rem;
 }
 
+.information p > a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .information p::before {
   content: "";
   display: inline-block;

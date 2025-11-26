@@ -20,24 +20,33 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/acordeon.css">
     <link rel="stylesheet" href="assets/css/languages.css">
+    <link rel="stylesheet" href="assets/css/portifolio.css">
 </head>
 
 <body>
-    <div class="main">
-
+    <main>
         <header class="header">
             <img src="/assets/img/my-photo.jpeg" alt="Foto do Eduardo S Pereira" class="photo">
 
-            <h1 class="title">Olá,<br> Eu sou Eduardo S. Pereira.</h1>
+            <h1 class="title">Olá,<br> Eu sou Eduardo S.</h1>
 
             <div class="information">
                 <p class="job">Desenvolvedor Web</p>
                 <p class="location">Brasilia-DF</p>
-                <p class="phone">61 99624-1337</p>
-                <p class="email">silvapereira1608@gmail.com</p>
+                <p class="phone">
+                    <a href="tel:+55(61) 9 9624-1337">
+                        (61) 9 9624-1337
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="mailto:silvapereira1608gb@gmail.com">
+                        silvapereira1608gb@gmail.com
+                    </a>
+                </p>
             </div>
         </header>
 
+        <!-- SEÇÃO IDIOMAS -->
         <section class="acordeon">
 
             <button class="trigger" type="button">Idiomas</button>
@@ -51,7 +60,34 @@
 
         </section>
 
-    </div>
+        <!-- SEÇÃO PORTIFÓLIO -->
+        <section class="acordeon">
+            <button class="trigger" type="button">Portifólio</button>
+
+            <div class="content">
+                <ul class="portifolio">
+                    <li>
+                        <span class="title github">Agência Baby Care - Agência de babás</span>
+                        <a href="https://github.com/DevEduSilva/AGENCIA-BABY-CARE" target="_blank">Acesse aqui!</a>
+                    </li>
+                    <li>
+                        <span class="title github">Instrutor de Autoescola - Professor de trânsito</span>
+                        <a href="https://github.com/DevEduSilva/LandingPage-Instrutor" target="_blank">Acesse aqui!</a>
+                    </li>
+                    <li>
+                        <span class="title github">Salva Carteira - Calculadora de Compras</span>
+                        <a href="https://github.com/DevEduSilva/SalvaCarteira" target="_blank">Acesse aqui!</a>
+                    </li>
+                    <li>
+                        <span class="title github">Projeto Verão - Treinos Para Academia</span>
+                        <a href="https://github.com/DevEduSilva/Projeto-Verao" target="_blank">Acesse aqui!</a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
     <script src="assets/js/acordeon.js"></script>
 </body>
 
