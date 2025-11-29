@@ -1,0 +1,81 @@
+{
+    "name": "Eduardo S",
+    "photo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/my-photo.jpeg",
+    "job": "Desenvolvedor Web",
+    "location": "Brasilia-DF",
+    "phone": "(61) 9 9624-1337",
+    "email": "silvapereira1608gb@gmail.com",
+    "skills": {
+        "hardSkills": [
+            {
+                "name": "html",
+                "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/html.svg"
+            },
+            {
+                "name": "css",
+                "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/css.svg"
+            },
+            {
+                "name": "js",
+                "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/js.svg"
+            },
+            {
+                "name": "git",
+                "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/git.svg"
+            },
+            {
+                "name": "react",
+                "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/react.svg"
+            }
+        ],
+        "softSkills": [
+            "Liderança",
+            "Facilidade em comunicação",
+            "Comunicação",
+            "Trabalho em equipe"
+        ]
+    },
+    "languages": [
+        "Português",
+        "Inglês"
+    ],
+    "portfolio": [
+        {
+            "name": "Agência Baby Care - Agência de babás",
+            "url": "https://github.com/DevEduSilva/AGENCIA-BABY-CARE",
+            "github": true
+        },
+        {
+            "name": "Instrutor de Autoescola - Professor de trânsito",
+            "url": "https://github.com/DevEduSilva/LandingPage-Instrutor",
+            "github": true
+        },
+        {
+            "name": "Salva Carteira - Calculadora de Compras",
+            "url": "https://github.com/DevEduSilva/SalvaCarteira",
+            "github": true
+        },
+        {
+            "name": "Projeto Verão - Treinos Para Academia",
+            "url": "https://github.com/DevEduSilva/Projeto-Verao",
+            "github": true
+        }
+    ],
+    "professionalExperience": [
+        {
+            "name": "Desenvolvedor Front-End / Autônomo",
+            "period": "Jan/2024 || Atualmente",
+            "description": "Atuo, de forma autônoma, no desenvolvimento de websites responsivos, utilizando tecnologias como HTML, CSS, JavaScript e alguns frameworks. Realizo a criação de landing pages."
+        },
+        {
+            "name": "Auxiliar Administrativo / Confederal Vigilância",
+            "period": "jul/2024 || Atualmente",
+            "description": "Atuo no administrativo, proporcionando suporte integral a rotinas organizacionais. Responsável por gerenciamento de documentos, arquivamento e controle eficiente de dados (Excel). Foco na melhoria da organização interna e na excelência do atendimento."
+        },
+        {
+            "name": "Técnico de informática / Autônomo",
+            "period": "Abr/2022 || mai/2025",
+            "description": "Atuava, de forma autônoma, com formatação de computadores, instalação de programas de edição 3D (de forma remota, via anydesk, ou presencialmente), consultoria para melhorias de setups."
+        }
+    ]
+}
