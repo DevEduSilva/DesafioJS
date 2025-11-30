@@ -29,6 +29,19 @@ function updateProfileInfo(profileData) {
   email.href = `mailto: ${profileData.email}`;
 }
 
+function updateHardSkill(profileData) {
+  // DECLARANDO VARIAVEIS
+  const hardSkills = document.getElementById("profile.skills.hardSkills");
+
+  // ALTERANDO LISTA DE HARDSKILLS
+  hardSkills.innerHTML = profileData.skills.hardSkills
+    .map(
+      (skill) =>
+        `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`
+    )
+    .join("");
+}
+
 function updateSoftSkill(profileData) {
   // DECLARANDO VARIAVEIS
   const softSkills = document.getElementById("profile.skills.softSkills");
@@ -39,23 +52,42 @@ function updateSoftSkill(profileData) {
     .join("");
 }
 
-function updateHardSkill(profileData) {
+function updateLanguages(profileData) {
   // DECLARANDO VARIAVEIS
-  const hardSkills = document.getElementById("profile.skills.hardSkills");
+  const languages = document.getElementById("profile.languages");
 
-  // ALTERANDO LISTA DE HARDSKILLS
-  hardSkills.innerHTML = profileData.skills.hardSkills
-    .map((skill) => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`)
+  // ALTERANDO LISTA DE IDIOMAS
+  languages.innerHTML = profileData.languages
+    .map((languages) => `<li>${languages}</li>`)
     .join("");
+}
+
+function updatePortfolio(profileData) {
+  // DECLARANDO VARIAVEIS
+  const portfolio = document.getElementById("profile.portfolio");
+
+  // ALTERANDO LISTA DE profile
+  portfolio.innerHTML = profileData.portfolio.map(project => {
+      return `
+                   <li>
+                     <span ${project.github ? 'class="title github"' : ''}>${project.name}</span>
+                     <a href="${project.url}" target="_blank">Acesse aqui!</a>
+                    </li>
+    `})
+    .join('');
 }
 
 function updateAllInformations(profileData) {
   // DADOS PESSOAIS
   updateProfileInfo(profileData);
   // HARD SKILLS
-  updateHardSkill(profileData)
+  updateHardSkill(profileData);
   // SOFT SKILLS
   updateSoftSkill(profileData);
+  // IDIOMAS
+  updateLanguages(profileData);
+  // PORTFOLIO
+  updatePortfolio(profileData);
 }
 
 (async () => {
