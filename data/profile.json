@@ -8,23 +8,23 @@
     "skills": {
         "hardSkills": [
             {
-                "name": "html",
+                "name": "HTML",
                 "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/html.svg"
             },
             {
-                "name": "css",
+                "name": "CSS",
                 "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/css.svg"
             },
             {
-                "name": "js",
+                "name": "JS",
                 "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/js.svg"
             },
             {
-                "name": "git",
+                "name": "Git",
                 "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/git.svg"
             },
             {
-                "name": "react",
+                "name": "React",
                 "logo": "https://raw.githubusercontent.com/DevEduSilva/DesafioJS/refs/heads/main/assets/img/icons/react.svg"
             }
         ],

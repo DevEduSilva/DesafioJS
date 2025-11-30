@@ -39,9 +39,21 @@ function updateSoftSkill(profileData) {
     .join("");
 }
 
+function updateHardSkill(profileData) {
+  // DECLARANDO VARIAVEIS
+  const hardSkills = document.getElementById("profile.skills.hardSkills");
+
+  // ALTERANDO LISTA DE HARDSKILLS
+  hardSkills.innerHTML = profileData.skills.hardSkills
+    .map((skill) => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`)
+    .join("");
+}
+
 function updateAllInformations(profileData) {
   // DADOS PESSOAIS
   updateProfileInfo(profileData);
+  // HARD SKILLS
+  updateHardSkill(profileData)
   // SOFT SKILLS
   updateSoftSkill(profileData);
 }
