@@ -66,15 +66,39 @@ function updatePortfolio(profileData) {
   // DECLARANDO VARIAVEIS
   const portfolio = document.getElementById("profile.portfolio");
 
-  // ALTERANDO LISTA DE profile
-  portfolio.innerHTML = profileData.portfolio.map(project => {
+  // ALTERANDO LISTA DE PORTFOLIO
+  portfolio.innerHTML = profileData.portfolio
+    .map((project) => {
       return `
                    <li>
-                     <span ${project.github ? 'class="title github"' : ''}>${project.name}</span>
+                     <span ${project.github ? 'class="title github"' : ""}>${
+        project.name
+      }</span>
                      <a href="${project.url}" target="_blank">Acesse aqui!</a>
                     </li>
-    `})
-    .join('');
+    `;
+    })
+    .join("");
+}
+
+function updateProfessionalExperience(profileData) {
+  // DECLARANDO VARIÁVEL
+  const professionalExperience = document.getElementById(
+    "profile.professionalExperience"
+  );
+
+  // ALTERANDO DADOS PROFISSIONAIS
+  professionalExperience.innerHTML = profileData.professionalExperience
+    .map((project) => {
+      return `
+                    <li>
+                        <h3 class="title">${project.name}</h3>
+                        <p class="period">${project.period}</p>
+                        <p> ${project.description} </p>
+                    </li>
+    `;
+    })
+    .join("");
 }
 
 function updateAllInformations(profileData) {
@@ -88,6 +112,8 @@ function updateAllInformations(profileData) {
   updateLanguages(profileData);
   // PORTFOLIO
   updatePortfolio(profileData);
+  //DADOS PROFISSIONAIS
+  updateProfessionalExperience(profileData);
 }
 
 (async () => {
