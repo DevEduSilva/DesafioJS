@@ -29,7 +29,24 @@ function updateProfileInfo(profileData) {
   email.href = `mailto: ${profileData.email}`;
 }
 
+function updateSoftSkill(profileData) {
+  // DECLARANDO VARIAVEIS
+  const softSkills = document.getElementById("profile.skills.softSkills");
+
+  // ALTERANDO LISTA DE SOFTSKILLS
+  softSkills.innerHTML = profileData.skills.softSkills
+    .map((skill) => `<li>${skill}</li>`)
+    .join("");
+}
+
+function updateAllInformations(profileData) {
+  // DADOS PESSOAIS
+  updateProfileInfo(profileData);
+  // SOFT SKILLS
+  updateSoftSkill(profileData);
+}
+
 (async () => {
   const profileData = await fetchProfileData();
-  updateProfileInfo(profileData);
+  updateAllInformations(profileData);
 })();
